@@ -1,19 +1,19 @@
-import React from "react";
-import styles from "../styles/styles.module.scss";
-import Layout from "../components/layout";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import laptop from "../../static/img/laptop.png";
-import seo from "../../static/img/seo.png";
-import contentful from "../../static/img/contentful.png";
-import wallet from "../../static/img/wallet.png";
+import React from "react"
+import styles from "../styles/styles.module.scss"
+import Layout from "../components/layout"
+import AOS from "aos"
+import "aos/dist/aos.css"
+import laptop from "../../static/img/laptop.png"
+import seo from "../../static/img/seo.png"
+import contentful from "../../static/img/contentful.png"
+import wallet from "../../static/img/wallet.png"
 
 class Services extends React.Component {
   componentDidMount() {
     AOS.init({
       duration: 1000,
-      disable: "mobile"
-    });
+      disable: "mobile",
+    })
   }
   render() {
     return (
@@ -22,6 +22,7 @@ class Services extends React.Component {
           className={styles.pageHeader}
           data-aos="fade-down"
           data-aos-easing="ease-in-sine"
+          data-aos-once="true"
         >
           <h1>Why choose our service?</h1>
           <p>
@@ -122,8 +123,8 @@ class Services extends React.Component {
           />
         </div>
       </Layout>
-    );
+    )
   }
 }
 
-export default Services;
+export default Services
