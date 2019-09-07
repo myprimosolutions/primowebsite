@@ -5,7 +5,8 @@ const config = {
   siteLogo: "/logos/logo.png", // Logo used for SEO and manifest.
   siteUrl: "https://myprimosolutions.com", // Domain of your website without pathPrefix.
   pathPrefix: "/index", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
-  siteDescription: "A GatsbyJS stater with Advanced design in mind.", // Website description used for RSS feeds/meta description tag.
+  siteDescription:
+    "Specializes in building blazing fast website for businesses.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   googleAnalyticsID: "UA-47311644-5", // GA tracking ID.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
