@@ -1,0 +1,304 @@
+// Global variables
+$mainColor: #f3f3f3;
+$mainFontColor: #666666;
+$secondaryFontColor: #999999;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  font-family: "Abel", sans-serif;
+}
+
+// Navbar styling start
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 20vh;
+  background-color: $mainColor;
+  list-style-type: none;
+}
+
+.logo {
+  letter-spacing: 5px;
+  font-size: 22px;
+  color: $mainFontColor;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: $mainFontColor;
+  }
+}
+
+.nav-item {
+  color: $secondaryFontColor;
+  margin-right: 1.3rem;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 20px;
+
+  &:hover {
+    color: black;
+    text-decoration: none;
+  }
+}
+.active-nav-item {
+  color: $mainFontColor;
+  text-decoration: none;
+}
+// Navbar styling end
+//------------------------------------------------------------------
+// Normal desktop screen start
+@media screen and (min-width: 768px) {
+  .navLayout {
+    margin-top: 15vh;
+  }
+  .navLayout2 {
+    margin: 15vh 12vw 0 0;
+  }
+
+  .logo {
+    margin: 15vh 0 0 12vw;
+  }
+
+  .pageHeader {
+    margin: 0 20vw;
+  }
+}
+
+.body {
+  width: 60%;
+  min-height: 80vh;
+  margin: auto;
+  position: relative;
+  margin-top: 10vh;
+}
+// Normal desktop screen end
+//------------------------------------------------------------------
+// Body start
+.pageHeader {
+  width: 40vw;
+  margin: auto;
+  padding: 5vh 0;
+
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    font-size: 20px;
+    color: $mainFontColor;
+
+    a {
+      text-decoration: none;
+      color: darkgray;
+
+      &:hover {
+        color: gray;
+      }
+    }
+  }
+}
+
+.contentLayout {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2vh 0;
+
+  p {
+    color: $mainFontColor;
+    font-size: 18px;
+  }
+}
+
+.contentLayoutSC {
+  //display: flex;
+  //justify-content: space-evenly;
+  padding: 2vh 15vw;
+
+  p {
+    color: $mainFontColor;
+    font-size: 18px;
+  }
+}
+
+.contentHeaderDIV {
+  padding: 5vh 0 0 0;
+
+  h1 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 20px;
+    color: $mainFontColor;
+  }
+}
+
+.contentDIV {
+  padding: 2vh 0;
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    padding-top: 2vh;
+    color: $mainFontColor;
+  }
+}
+
+form,
+table {
+  width: 100%;
+  margin: auto;
+  //align-self: center;
+
+  td {
+    vertical-align: center;
+    padding: 0 5px;
+  }
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+textarea {
+  max-height: 100px;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #555;
+}
+
+button {
+  color: $secondaryFontColor;
+  letter-spacing: 2px;
+  font-size: 20px;
+  background-color: #f3f3f3;
+  width: 90px;
+
+  &:hover {
+    color: black;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $mainFontColor;
+    text-decoration: none;
+  }
+}
+
+// body end
+//------------------------------------------------------------------
+// Footer start
+.footer {
+  background-color: $mainColor;
+  padding: 10px;
+  width: 100%;
+  bottom: 0px;
+  position: relative;
+  height: 45vh;
+  margin: 5vh 0 0 0;
+  padding: 1rem 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  .left {
+    padding: 6rem 1rem 0 15vw;
+  }
+  .right {
+    padding: 6rem 15vw 0 1rem;
+  }
+  p {
+    padding: 1.2rem 0;
+  }
+  .vline {
+    background-color: $mainFontColor;
+    width: 1px;
+    height: 35vh;
+    align-self: auto;
+    margin: auto 0;
+  }
+  a {
+    color: $secondaryFontColor;
+    text-decoration: none;
+
+    &:hover {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+// Footer end
+//------------------------------------------------------------------
+// Mobile display start
+@media screen and (max-width: 768px) {
+  .body {
+    width: 90%;
+  }
+
+  .logo,
+  .navLayout,
+  .navLayout2 {
+    margin: 0 0 0 3vw;
+  }
+
+  .togLayout {
+    margin: 0 3vw 0 0;
+  }
+
+  .contentLayout {
+    flex-direction: column;
+  }
+
+  .pageHeader {
+    width: 80vw;
+  }
+
+  .footer {
+    height: 72vh;
+    margin: 5vh 0 0 0;
+    padding: 1rem 0 0 0;
+    display: flex;
+    flex-direction: column-reverse;
+
+    .left {
+      padding: 1rem;
+      margin: auto;
+    }
+    .right {
+      padding: 1rem;
+    }
+    p {
+      padding: 0.8rem 0;
+    }
+
+    .vline {
+      background-color: $mainFontColor;
+      width: 95vw;
+      height: 1px;
+      align-self: auto;
+      margin: auto;
+    }
+  }
+}
+// Mobile display end
