@@ -118,8 +118,6 @@ $secondaryFontColor: #999999;
 }
 
 .contentLayoutSC {
-  //display: flex;
-  //justify-content: space-evenly;
   padding: 2vh 15vw;
 
   p {
@@ -155,15 +153,11 @@ $secondaryFontColor: #999999;
   }
 }
 
-form,
-table {
+.email {
   width: 100%;
   margin: auto;
-
-  td {
-    vertical-align: center;
-    padding: 0 5px;
-  }
+  display: flex;
+  flex-direction: column;
 }
 
 input,
@@ -214,7 +208,7 @@ button {
   width: 100%;
   bottom: 0px;
   position: relative;
-  height: 45vh;
+  height: 55vh;
   margin: 5vh 0 0 0;
   padding: 1rem 0 0 0;
   display: flex;
@@ -274,7 +268,7 @@ button {
   }
 
   .footer {
-    height: 72vh;
+    height: 78vh;
     margin: 5vh 0 0 0;
     padding: 1rem 0 0 0;
     display: flex;
